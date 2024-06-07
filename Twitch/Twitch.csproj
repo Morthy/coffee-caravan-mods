@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="0Harmony">
+        <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Coffee Caravan\MelonLoader\net6\0Harmony.dll</HintPath>
+      </Reference>
+      <Reference Include="Il2CppCoffeeStandScripts">
+        <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Coffee Caravan\MelonLoader\Il2CppAssemblies\Il2CppCoffeeStandScripts.dll</HintPath>
+      </Reference>
+      <Reference Include="Il2Cppmscorlib">
+        <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Coffee Caravan\MelonLoader\Il2CppAssemblies\Il2Cppmscorlib.dll</HintPath>
+      </Reference>
+      <Reference Include="MelonLoader">
+        <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Coffee Caravan\MelonLoader\net6\MelonLoader.dll</HintPath>
+      </Reference>
+      <Reference Include="Unity.TextMeshPro">
+        <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Coffee Caravan\MelonLoader\Il2CppAssemblies\Unity.TextMeshPro.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.CoreModule">
+        <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Coffee Caravan\MelonLoader\Il2CppAssemblies\UnityEngine.CoreModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.InputModule">
+        <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Coffee Caravan\MelonLoader\Il2CppAssemblies\UnityEngine.InputModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UI">
+        <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Coffee Caravan\MelonLoader\Il2CppAssemblies\UnityEngine.UI.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UIModule">
+        <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Coffee Caravan\MelonLoader\Il2CppAssemblies\UnityEngine.UIModule.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Il2CppInterop.Runtime" Version="1.4.5" />
+    </ItemGroup>
+
+    <Import Project="$(SolutionDir)\solution.targets" />
+    
+</Project>
